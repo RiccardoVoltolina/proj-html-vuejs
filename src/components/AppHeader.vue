@@ -56,13 +56,15 @@ export default {
                     <div class="col-5 d-flex flex-column justify-content-center">
                         <h5>Gaming with live streaming</h5>
                         <h2>Future Of <br> Esports</h2>
-                        <p class=" text-bg-danger">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium</p>
                         <div class="d-flex align-items-center">
                             <AppButton :buttonText="'Explore games'" :img="'src/assets/images/svg/e-double-right-arrow.svg'"></AppButton>
 
                             <div class="ps-1">
-                                <button><img src="../assets/images/icon/play-icon.png" alt=""></button>
+                                <div class="border_play_button">
+                                    <button class="play_button"><img src="../assets/images/icon/play-icon.png" alt=""></button>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -88,11 +90,29 @@ a {
 }
 
 /* section future */
+
+.image_joistick_background {
+    background-image: url(../assets/images/header-images/header-controller.png);
+    background-repeat: no-repeat;
+    background-position: bottom 160px left 10px;
+    background-size: 300px;
+}
 h2 {
     font-size: 55px;
     color: white;
 }
 
+.play_button {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    border: none;
+}
+.border_play_button {
+    border: 1px solid #08cb7b;
+    border-radius: 50%;
+    padding: 5px;
+}
 .height_750 {
     height: 750px;
 }
