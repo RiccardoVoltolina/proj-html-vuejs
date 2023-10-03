@@ -90,8 +90,8 @@ export default {
                             :imgTeam1="'src/assets/images/battle-team-7.png'"
                             :imgTeam2="'src/assets/images/battle-team-8.png'" />
                     </div>
-                    <div class="text-center">
-                        <AppButton :buttonText="'Play Now'" :img="'src/assets/images/svg/e-double-right-arrow.svg'">
+                    <div class="text-center pe-5 py-5">
+                        <AppButton :buttonText="'View All Match'" :img="'src/assets/images/svg/e-double-right-arrow.svg'">
                         </AppButton>
                     </div>
 
