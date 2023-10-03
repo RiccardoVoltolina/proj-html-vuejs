@@ -44,9 +44,7 @@ export default {
                     <div class="col-3 d-flex align-items-center">
                         <div class="d-flex align-items-center">
                             <img class="pe-2" src="../assets/images/icon/cart-icon.png" alt="">
-                            <div class="">
-                                <button>LIVE STREAMING</button>
-                            </div>
+                            <AppButton :buttonText="'Live streaming'" />
                         </div>
                     </div>
                 </div>
@@ -61,8 +59,8 @@ export default {
                         <p class=" text-bg-danger">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium</p>
                         <div class="d-flex align-items-center">
-                            <button>Explore games <img class="bg-black" src="../assets/images/svg/e-double-right-arrow.svg"
-                                    alt=""></button>
+                            <AppButton :buttonText="'Explore games'" :img="'src/assets/images/svg/e-double-right-arrow.svg'"></AppButton>
+
                             <div class="ps-1">
                                 <button><img src="../assets/images/icon/play-icon.png" alt=""></button>
                             </div>
@@ -75,32 +73,27 @@ export default {
             </div>
         </section>
     </header>
-    <AppButton></AppButton>
 </template>
 
 <style lang="scss" scoped>
-
 header {
-  background-image: url(../assets/images/header-images/header-banner.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url(../assets/images/header-images/header-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
 
 /* section future */
 h2 {
-  font-size: 55px;
-  color: white;
+    font-size: 55px;
+    color: white;
 }
 
 .height_750 {
     height: 750px;
 }
-
-
-
 </style>
