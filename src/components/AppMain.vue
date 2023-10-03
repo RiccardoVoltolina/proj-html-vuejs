@@ -1,10 +1,12 @@
 
 <script>
 import AppButton from './AppButton.vue';
+import TeamCard from './TeamCard.vue';
 export default {
     name: 'AppMain',
     components: {
         AppButton,
+        TeamCard,
     }
 
 }
@@ -67,40 +69,36 @@ export default {
                 </div>
             </div>
             <div class="container w-75">
-                <div class="row">
-                    <div class="col-6 d-flex">
-                        <div class="card bg_color_card_team d-flex flex-column">
-                            <div class="d-flex p-3 battle_team align-items-center justify-content-evenly">
-                                <div class="col-4">
-                                    <img src="../assets/images/battle-team-4.png" alt="">
-                                </div>
-                                <div class="col-4 text-center">
-                                    <img src="../assets/images/verus-icon.png" alt="">
-                                </div>
-                                <div class="col-4">
-                                    <img src="../assets/images/battle-team-5.png" alt="">
-                                </div>
-                            </div>
-                            <div class="text-center py-3 bg_banner_card">
-                                <h5>Call of deauty</h5>
-                                <span>December 25,2022 4:00 PM</span>
-                            </div>
-                            <div class="d-flex justify-content-center py-3">
-                                <div class="d-flex align-items-center">
-                                    <img class="w-25" src="../assets/images/icon/youtube-icon.png" alt="">
-                                    <div class="text-white">Youtube</div>
-                                </div>
-                                <div class="d-flex align-items-center">
-                                    <img class="w-25" src="../assets/images/icon/twitch-icon.png" alt="">
-                                    <div class="text-white">Twitch</div>
-                                </div>
-                            </div>
-
-                        </div>
+                <div class="row g-0 justify-content-center">
+                    <div class="col-6 d-flex py-3">
+                        <TeamCard :textTitle="'Call Of Duty'" :dayMatch="'December 25,2022 4:00 PM'"
+                            :imgTeam1="'src/assets/images/battle-team-1.png'"
+                            :imgTeam2="'src/assets/images/battle-team-2.png'" />
                     </div>
-                    
+                    <div class="col-6 d-flex py-3">
+                        <TeamCard :textTitle="'Legendary Battles'" :dayMatch="'December 25,2022 4:00 PM'"
+                            :imgTeam1="'src/assets/images/battle-team-3.png'"
+                            :imgTeam2="'src/assets/images/battle-team-4.png'" />
+                    </div>
+                    <div class="col-6 d-flex py-3">
+                        <TeamCard :textTitle="'Nay Corral Gundown'" :dayMatch="'December 25,2022 4:00 PM'"
+                            :imgTeam1="'src/assets/images/battle-team-5.png'"
+                            :imgTeam2="'src/assets/images/battle-team-6.png'" />
+                    </div>
+                    <div class="col-6 d-flex py-3">
+                        <TeamCard :textTitle="'League Of Legends'" :dayMatch="'December 25,2022 4:00 PM'"
+                            :imgTeam1="'src/assets/images/battle-team-7.png'"
+                            :imgTeam2="'src/assets/images/battle-team-8.png'" />
+                    </div>
+                    <div class="text-center">
+                        <AppButton :buttonText="'Play Now'" :img="'src/assets/images/svg/e-double-right-arrow.svg'">
+                        </AppButton>
+                    </div>
+
                 </div>
             </div>
+
+
 
 
         </section>
@@ -120,18 +118,5 @@ h2 {
 /* treding battle */
 .bg_color_treding_battle {
     background-color: #30405f;
-}
-
-.bg_color_card_team {
-    background-color: #28344a;
-    border-radius: 10px;
-}
-
-.bg_banner_card {
-    background-color: #30415f;
-}
-
-.battle_team img {
-    max-width: 100%;
 }
 </style>
