@@ -56,7 +56,7 @@ export default {
                     <div class="col-5 d-flex flex-column justify-content-center">
                         <h5>Gaming with live streaming</h5>
                         <h2>Future Of <br> Esports</h2>
-                        <p class="">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        <p class="text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium</p>
                         <div class="d-flex align-items-center">
                             <AppButton :buttonText="'Explore games'" :img="'src/assets/images/svg/e-double-right-arrow.svg'"></AppButton>
