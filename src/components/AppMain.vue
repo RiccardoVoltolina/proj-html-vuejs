@@ -343,6 +343,27 @@ export default {
                 </div>
             </div>
         </section>
+
+        <!-- subscribe section -->
+
+        <section>
+            <div class="container w-75">
+                <div class="subscribe_card w-75 m-auto align-items-center p-4 d-flex">
+                    <div class="w-50 d-flex flex-column">
+                        <h3>Subscribe Newsletter</h3>
+                        <p>Libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at telus</p>
+                    </div>
+                    <div class="w-50 ps-3">
+                        <div class="d-flex justify-content-between align-items-center send_email_container p-2">
+                            <div>Enter your email</div>
+                            <div class="send_button d-flex justify-content-center align-items-center">
+                                <img class="p-2 send_image" src="../assets/images/icon/send-icon.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -499,6 +520,7 @@ h2 {
 
 .latest_principal_card {
     background-color: #28344a;
+    border-radius: 15px;
 }
 
 .latest_secondary_card {
@@ -508,6 +530,26 @@ h2 {
 
     .border_radius_latest_img {
         border-radius: 15px;
+    }
+}
+
+/* subscribe section*/
+
+.subscribe_card {
+    background-color: #30415f;
+    border-radius: 15px;
+}
+
+.send_email_container {
+    background-color: #435374;
+    border-radius: 15px;
+}
+
+.send_button {
+    background-color: #92cb52;
+    border-radius: 50%;
+    .send_image {
+        width: 40px;
     }
 }
 </style>
