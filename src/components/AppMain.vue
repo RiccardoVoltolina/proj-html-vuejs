@@ -226,7 +226,8 @@ export default {
         </section>
 
         <!-- gamers say section -->
-        <section class="bg-black pt-5">
+
+        <section class="bg-black py-5">
             <div class="container w-50 text-center">
                 <h5>Futio feedback</h5>
                 <h2>What Our gamers Say</h2>
@@ -238,6 +239,17 @@ export default {
             <div class="container w-75">
                 <div class="row flex-nowrap user_reviews_container">
                     <GamersSayCard v-for="userReview in userReviews" :reviewData="userReview" />
+                </div>
+            </div>
+        </section>
+
+        <!-- ads section -->
+
+        <section class="py-5 bg-black">
+            <div class="container m-auto ads_container">
+                <div class=" w-100 position-relative ads_bg">
+                    <img class="ads_image_telephone position-absolute" src="../assets/images/banner-item-obj1.png" alt="">
+
                 </div>
             </div>
         </section>
@@ -344,7 +356,29 @@ h2 {
 .user_reviews_container {
     overflow-x: scroll;
 }
+
 .user_reviews_container::-webkit-scrollbar {
     display: none;
+}
+
+/* ads section */
+
+.ads_container {
+
+    height: 450px;
+
+    .ads_bg {
+        background-image: url(../assets/images/banner-item-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 400px;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .ads_image_telephone {
+            width: 300px;
+            bottom: -100px;
+        }
+    }
 }
 </style>
