@@ -258,6 +258,41 @@ export default {
                 </div>
             </div>
         </section>
+
+        <!-- lates news -->
+
+        <section class="bg-black">
+            <div class="container w-50 text-center">
+                <h5>Latest News</h5>
+                <h2>Stay Updated With Our Latest News Articles</h2>
+                <p class="text-white px-5 pb-5">libero melesuada feugiat. Vivamus magna justo, lacinia eget
+                    consectetur sed,
+                    convallis at tellus. <br> Cras ultricies liguia sed magna dictum porta.
+                </p>
+            </div>
+            <div class="container w-75 d-flex">
+                <div class="col-6">
+                    <div class="card border-0 latest_principal_card">
+                        <img src="../assets/images/blog-item-1.png" class="card-img-top" alt="...">
+                        <div class="card-body pb-1">
+                            <div class="d-flex align-items-center pb-1">
+                                <img src="../assets/images/icon/clock.png" alt="">
+                                <div class="ps-2 pe-3">10 min</div>
+                                <img src="../assets/images/icon/eye.png" alt="">
+                                <div class="ps-2 pe-3">240</div>
+                                <img src="../assets/images/icon/calendar.png" alt="">
+                                <div class="ps-2">Apr 11,2022</div>
+                            </div>
+                            <h3 class=" mb-0">Secrets To An Amazing Role</h3>
+                            <h3 class="mb-0">Playng Game</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+
+                </div>
+            </div>
+        </section>
     </main>
 </template>
 
@@ -408,5 +443,11 @@ h2 {
             right: 5px;
         }
     }
+}
+
+/* latest section */
+
+.latest_principal_card {
+    background-color: #28344a;
 }
 </style>
