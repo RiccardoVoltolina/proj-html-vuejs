@@ -270,26 +270,76 @@ export default {
                     convallis at tellus. <br> Cras ultricies liguia sed magna dictum porta.
                 </p>
             </div>
-            <div class="container w-75 d-flex">
-                <div class="col-6">
-                    <div class="card border-0 latest_principal_card">
-                        <img src="../assets/images/blog-item-1.png" class="card-img-top" alt="...">
-                        <div class="card-body pb-1">
-                            <div class="d-flex align-items-center pb-1">
-                                <img src="../assets/images/icon/clock.png" alt="">
-                                <div class="ps-2 pe-3">10 min</div>
-                                <img src="../assets/images/icon/eye.png" alt="">
-                                <div class="ps-2 pe-3">240</div>
-                                <img src="../assets/images/icon/calendar.png" alt="">
-                                <div class="ps-2">Apr 11,2022</div>
+            <div class="container w-75">
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="card border-0 latest_principal_card">
+                            <img src="../assets/images/blog-item-1.png" class="card-img-top" alt="...">
+                            <div class="card-body pb-1">
+                                <div class="d-flex align-items-center pb-1">
+                                    <img src="../assets/images/icon/clock.png" alt="">
+                                    <div class="ps-2 pe-3">10 min</div>
+                                    <img src="../assets/images/icon/eye.png" alt="">
+                                    <div class="ps-2 pe-3">240</div>
+                                    <img src="../assets/images/icon/calendar.png" alt="">
+                                    <div class="ps-2">Apr 11,2022</div>
+                                </div>
+                                <h3 class=" mb-0">Secrets To An Amazing Role</h3>
+                                <h3 class="mb-0">Playng Game</h3>
                             </div>
-                            <h3 class=" mb-0">Secrets To An Amazing Role</h3>
-                            <h3 class="mb-0">Playng Game</h3>
                         </div>
                     </div>
-                </div>
-                <div class="col-6">
+                    <div class="col-6 d-flex flex-column">
+                        <div class="d-flex latest_secondary_card pb-1">
+                            <img class="h-100 border_radius_latest_img pe-3" src="../assets/images/blog-item-2.png" alt="">
+                            <div class="d-flex flex-column py-3">
+                                <div class="d-flex align-items-center pb-3">
+                                    <img src="../assets/images/icon/clock.png" alt="">
+                                    <div class="ps-2 pe-3">10 min</div>
+                                    <img src="../assets/images/icon/eye.png" alt="">
+                                    <div class="ps-2 pe-3">240</div>
+                                    <img src="../assets/images/icon/calendar.png" alt="">
+                                    <div class="ps-2">Apr 11,2022</div>
+                                </div>
+                                <h4 class=" mb-0">Top 5 Most Important</h4>
+                                <h4 class="mb-0">Aspects Of Your Game</h4>
+                            </div>
 
+                        </div>
+                        <div class="d-flex latest_secondary_card  my-4">
+                            <img class="h-100 border_radius_latest_img pe-3" src="../assets/images/blog-item-3.png" alt="">
+                            <div class="d-flex flex-column py-3">
+                                <div class="d-flex align-items-center pb-3">
+                                    <img src="../assets/images/icon/clock.png" alt="">
+                                    <div class="ps-2 pe-3">10 min</div>
+                                    <img src="../assets/images/icon/eye.png" alt="">
+                                    <div class="ps-2 pe-3">240</div>
+                                    <img src="../assets/images/icon/calendar.png" alt="">
+                                    <div class="ps-2">Apr 11,2022</div>
+                                </div>
+                                <h4 class=" mb-0">The Rise Of Fantasy</h4>
+                                <h4 class="mb-0">Sports And Online Games</h4>
+                            </div>
+
+                        </div>
+                        <div class="d-flex latest_secondary_card pb-1">
+                            <img class="h-100 border_radius_latest_img pe-3" src="../assets/images/blog-item-4.png" alt="">
+                            <div class="d-flex flex-column py-3">
+                                <div class="d-flex align-items-center pb-3">
+                                    <img src="../assets/images/icon/clock.png" alt="">
+                                    <div class="ps-2 pe-3">10 min</div>
+                                    <img src="../assets/images/icon/eye.png" alt="">
+                                    <div class="ps-2 pe-3">240</div>
+                                    <img src="../assets/images/icon/calendar.png" alt="">
+                                    <div class="ps-2">Apr 11,2022</div>
+                                </div>
+                                <h4 class=" mb-0">Benefits Of Gaming - PC</h4>
+                                <h4 class="mb-0">And Video Games</h4>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -449,5 +499,15 @@ h2 {
 
 .latest_principal_card {
     background-color: #28344a;
+}
+
+.latest_secondary_card {
+    height: calc(100% / 3 - 4rem);
+    border-radius: 15px;
+    background-color: #28344a;
+
+    .border_radius_latest_img {
+        border-radius: 15px;
+    }
 }
 </style>
