@@ -142,16 +142,34 @@ export default {
             <div class="bg-black">
 
                 <div class="watch_streams">
-    
+
                     <div class="container w-50 text-center">
                         <h5 class="text-white pt-5">Live Streaming</h5>
                         <h2>Watch the streams</h2>
-                        <p class="text-white px-5 pb-5">libero melesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed,
+                        <p class="text-white px-5 pb-5">libero melesuada feugiat. Vivamus magna justo, lacinia eget
+                            consectetur sed,
                             convallis at tellus. <br> Cras ultricies liguia sed magna dictum porta.</p>
-                        <div class="position-relative">
+                        <div class="position-relative image_elements">
                             <img class="w-100" src="../assets/images/stream-bg-3.png" alt="">
                             <div class="live_button_container position-absolute">
-                                <button class="d-flex align-items-center live_button"><img class="pe-2" src="../assets/images/icon/live-icon.png" alt="">Live</button>
+                                <button class="d-flex align-items-center live_button"><img class="pe-2"
+                                        src="../assets/images/icon/live-icon.png" alt="">Live</button>
+                            </div>
+                            <div class="position-absolute border_play_button_container">
+
+                                <div class="border_play_button">
+                                    <button class="play_button"><img src="../assets/images/icon/play-icon.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <h4 class="position-absolute">League of legends</h4>
+                            <div class="social_statics position-absolute">
+                                <div class="d-flex">
+                                    <div class="pe-1">356,599</div>
+                                    <div class="pe-3">Viewers</div>
+                                    <div class="pe-1">23,599</div>
+                                    <div>Likes</div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -196,8 +214,9 @@ h2 {
 /* watch streams */
 
 .watch_streams {
-/*     background-color: #212733;
- */    background-image: url(../assets/images/live-streaming-bg.png);
+    /*     background-color: #212733;
+ */
+    background-image: url(../assets/images/live-streaming-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
 
@@ -216,6 +235,41 @@ h2 {
         }
     }
 
-   
+    .border_play_button_container {
+
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+
+        .border_play_button {
+            border: 1px solid #08cb7b;
+            border-radius: 50%;
+            padding: 5px;
+            width: fit-content;
+
+            .play_button {
+                border-radius: 50%;
+                width: 50px;
+                height: 50px;
+                border: none;
+
+            }
+        }
+
+    }
+
+    .image_elements {
+        h4 {
+            top: 60%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            color: white;
+        }
+
+        .social_statics {
+            bottom: 30px;
+            left: 30px;
+        }
+    }
 }
 </style>
