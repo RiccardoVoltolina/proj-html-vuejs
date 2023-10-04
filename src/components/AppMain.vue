@@ -63,7 +63,7 @@ export default {
 
         <section class="bg_color_treding_battle">
             <div class="container w-50">
-                <div class=" text-center">
+                <div class=" text-center py-5">
                     <h5>Trending battle</h5>
                     <h2>Keep eyes & Manage <br> Upcoming battle</h2>
                     <p>Libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
@@ -148,7 +148,12 @@ export default {
                         <h2>Watch the streams</h2>
                         <p class="text-white px-5 pb-5">libero melesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed,
                             convallis at tellus. <br> Cras ultricies liguia sed magna dictum porta.</p>
-                        <img class=" w-100" src="../assets/images/stream-bg-3.png" alt="">
+                        <div class="position-relative">
+                            <img class="w-100" src="../assets/images/stream-bg-3.png" alt="">
+                            <div class="live_button_container position-absolute">
+                                <button class="d-flex align-items-center live_button"><img class="pe-2" src="../assets/images/icon/live-icon.png" alt="">Live</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -195,5 +200,22 @@ h2 {
  */    background-image: url(../assets/images/live-streaming-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
+
+    .live_button_container {
+
+        top: 30px;
+        right: 30px;
+
+        .live_button {
+            border-radius: 30px;
+            background-color: #ff9a33;
+            border: none;
+            padding-top: 3px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+
+   
 }
 </style>
