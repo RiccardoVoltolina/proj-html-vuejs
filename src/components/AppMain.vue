@@ -236,11 +236,9 @@ export default {
                 </p>
             </div>
             <div class="container w-75">
-                <div class="row">
+                <div class="row flex-nowrap user_reviews_container">
                     <GamersSayCard v-for="userReview in userReviews" :reviewData="userReview" />
-
                 </div>
-
             </div>
         </section>
     </main>
@@ -342,4 +340,11 @@ h2 {
 
 
 /* gamers say section */
+
+.user_reviews_container {
+    overflow-x: scroll;
+}
+.user_reviews_container::-webkit-scrollbar {
+    display: none;
+}
 </style>
