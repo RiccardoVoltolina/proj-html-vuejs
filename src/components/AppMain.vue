@@ -143,14 +143,14 @@ export default {
 
                 <div class="watch_streams">
 
-                    <div class="container w-50 text-center">
+                    <div class="container w-50 text-center pb-5">
                         <h5 class="text-white pt-5">Live Streaming</h5>
                         <h2>Watch the streams</h2>
                         <p class="text-white px-5 pb-5">libero melesuada feugiat. Vivamus magna justo, lacinia eget
                             consectetur sed,
                             convallis at tellus. <br> Cras ultricies liguia sed magna dictum porta.</p>
                         <div class="position-relative image_elements">
-                            <img class="w-100" src="../assets/images/stream-bg-3.png" alt="">
+                            <img class="w-100" src="../assets/images/video-bg.png" alt="">
                             <div class="live_button_container position-absolute">
                                 <button class="d-flex align-items-center live_button"><img class="pe-2"
                                         src="../assets/images/icon/live-icon.png" alt="">Live</button>
@@ -222,8 +222,8 @@ h2 {
 
     .live_button_container {
 
-        top: 30px;
-        right: 30px;
+        top: 20px;
+        right: 20px;
 
         .live_button {
             border-radius: 30px;
@@ -259,16 +259,17 @@ h2 {
     }
 
     .image_elements {
+
         h4 {
-            top: 60%;
+            top: 65%;
             right: 50%;
             transform: translate(50%, -50%);
             color: white;
         }
 
         .social_statics {
-            bottom: 30px;
-            left: 30px;
+            bottom: 20px;
+            left: 20px;
         }
     }
 }
