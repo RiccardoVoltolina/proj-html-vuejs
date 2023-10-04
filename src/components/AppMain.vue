@@ -58,7 +58,9 @@ export default {
                 </div>
             </div>
         </section>
+
         <!-- keep eyes section -->
+
         <section class="bg_color_treding_battle">
             <div class="container w-50">
                 <div class=" text-center">
@@ -69,28 +71,28 @@ export default {
                 </div>
             </div>
             <div class="container w-75">
-                <div class="row g-0 justify-content-center">
-                    <div class="col-6 d-flex py-3">
+                <div class="row justify-content-center">
+                    <div class="col-6 d-flex py-4">
                         <TeamCard :textTitle="'Call Of Duty'" :dayMatch="'December 25,2022 4:00 PM'"
                             :imgTeam1="'src/assets/images/battle-team-1.png'"
                             :imgTeam2="'src/assets/images/battle-team-2.png'" />
                     </div>
-                    <div class="col-6 d-flex py-3">
+                    <div class="col-6 d-flex py-4">
                         <TeamCard :textTitle="'Legendary Battles'" :dayMatch="'December 25,2022 4:00 PM'"
                             :imgTeam1="'src/assets/images/battle-team-3.png'"
                             :imgTeam2="'src/assets/images/battle-team-4.png'" />
                     </div>
-                    <div class="col-6 d-flex py-3">
+                    <div class="col-6 d-flex py-4">
                         <TeamCard :textTitle="'Nay Corral Gundown'" :dayMatch="'December 25,2022 4:00 PM'"
                             :imgTeam1="'src/assets/images/battle-team-5.png'"
                             :imgTeam2="'src/assets/images/battle-team-6.png'" />
                     </div>
-                    <div class="col-6 d-flex py-3">
+                    <div class="col-6 d-flex py-4">
                         <TeamCard :textTitle="'League Of Legends'" :dayMatch="'December 25,2022 4:00 PM'"
                             :imgTeam1="'src/assets/images/battle-team-7.png'"
                             :imgTeam2="'src/assets/images/battle-team-8.png'" />
                     </div>
-                    <div class="text-center pe-5 py-5">
+                    <div class="text-center pe-4 py-5">
                         <AppButton :buttonText="'View All Match'" :img="'src/assets/images/svg/e-double-right-arrow.svg'">
                         </AppButton>
                     </div>
@@ -100,6 +102,41 @@ export default {
 
 
 
+
+        </section>
+
+        <!-- quick facts section -->
+
+        <section class="bg-black facts">
+            <div class="container w-75 m-auto">
+                <h2 class="text-center pb-5">Futio quick facts</h2>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="card bg-black text-center">
+                            <h2>1135</h2>
+                            <div>Twitch streams</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-black text-center">
+                            <h2>44</h2>
+                            <div>Total Games</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-black text-center">
+                            <h2>982</h2>
+                            <div>Youtube streams</div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="card bg-black text-center">
+                            <h2>40</h2>
+                            <div>Pro Team</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </section>
     </main>
@@ -118,5 +155,20 @@ h2 {
 /* treding battle */
 .bg_color_treding_battle {
     background-color: #30405f;
+}
+
+/* facts section */
+
+.facts {
+    .container {
+        padding-top: 6rem;
+        padding-bottom:6rem;
+    }
+    .card {
+        border: 1px solid gray;
+        border-radius: 30px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }
 </style>
