@@ -99,10 +99,6 @@ export default {
 
                 </div>
             </div>
-
-
-
-
         </section>
 
         <!-- quick facts section -->
@@ -139,6 +135,25 @@ export default {
             </div>
 
         </section>
+
+        <!-- watch streams -->
+
+        <section>
+            <div class="bg-black">
+
+                <div class="watch_streams">
+    
+                    <div class="container w-50 text-center">
+                        <h5 class="text-white pt-5">Live Streaming</h5>
+                        <h2>Watch the streams</h2>
+                        <p class="text-white px-5 pb-5">libero melesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed,
+                            convallis at tellus. <br> Cras ultricies liguia sed magna dictum porta.</p>
+                        <img class=" w-100" src="../assets/images/stream-bg-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 </template>
 
@@ -162,13 +177,23 @@ h2 {
 .facts {
     .container {
         padding-top: 6rem;
-        padding-bottom:6rem;
+        padding-bottom: 6rem;
     }
+
     .card {
         border: 1px solid gray;
         border-radius: 30px;
         padding-top: 1rem;
         padding-bottom: 1rem;
     }
+}
+
+/* watch streams */
+
+.watch_streams {
+/*     background-color: #212733;
+ */    background-image: url(../assets/images/live-streaming-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 </style>
