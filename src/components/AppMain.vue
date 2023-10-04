@@ -249,7 +249,12 @@ export default {
             <div class="container m-auto ads_container">
                 <div class=" w-100 position-relative ads_bg">
                     <img class="ads_image_telephone position-absolute" src="../assets/images/banner-item-obj1.png" alt="">
-
+                    <div class="text-white position-absolute ads_text d-flex flex-column align-items-center">
+                        <h5>Make Offer</h5>
+                        <h2 class="pb-2">Get 70% Offer Discount</h2>
+                        <button class="ads_button">Get Offers</button>
+                    </div>
+                    <img class="ads_image_headphones position-absolute" src="../assets/images/banner-item-obj2.png" alt="">
                 </div>
             </div>
         </section>
@@ -378,6 +383,29 @@ h2 {
         .ads_image_telephone {
             width: 300px;
             bottom: -100px;
+        }
+
+        .ads_text {
+            top: 50%;
+            right: 50%;
+            transform: translate(50%, -50%);
+        }
+
+        .ads_button {
+            background-color: #1a8f3e;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+        .ads_image_headphones {
+            width: 300px;
+            top: -70px;
+            right: 5px;
         }
     }
 }
