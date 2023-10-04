@@ -2,11 +2,58 @@
 <script>
 import AppButton from './AppButton.vue';
 import TeamCard from './TeamCard.vue';
+import GamersSayCard from './GamersSayCard.vue'
 export default {
     name: 'AppMain',
+
+    data() {
+        return {
+            userReviews: [
+                {//card1
+                    userImg: 'src/assets/images/user-image-1.png',
+                    userName: 'Kim Ramos',
+                    userCountry: 'Serbia',
+                    userText: 'Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor',
+                    userStar: 4,
+                },
+                {//card2
+                    userImg: 'src/assets/images/user-image-2.png',
+                    userName: 'Kim Ramos',
+                    userCountry: 'Serbia',
+                    userText: 'Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor',
+                    userStar: 3,
+                },
+                {//card3
+                    userImg: 'src/assets/images/user-image-3.png',
+                    userName: 'Kim Ramos',
+                    userCountry: 'Serbia',
+                    userText: 'Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor',
+                    userStar: 5,
+                },
+
+                {//card4
+
+                    userImg: 'src/assets/images/user-image-4.png',
+                    userName: 'Kim Ramos',
+                    userCountry: 'Serbia',
+                    userText: 'Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor',
+                    userStar: 1,
+                },
+                {//card5
+                    userImg: 'src/assets/images/user-image-1.png',
+                    userName: 'Kim Ramos',
+                    userCountry: 'Serbia',
+                    userText: 'Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor',
+                    userStar: 2,
+                },
+            ]
+        }
+    },
+
     components: {
         AppButton,
         TeamCard,
+        GamersSayCard,
     }
 
 }
@@ -190,45 +237,8 @@ export default {
             </div>
             <div class="container w-75">
                 <div class="row">
-                    <div class="col-4">
-                        <div class="card p-4 opinion_card">
-                            <div class="d-flex g-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-star-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-                                </svg>
-                            </div>
-                            <p class="py-2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor."</p>
-                            <div class="d-flex">
-                                <img class=" object-fit-contain" src="../assets/images/user-image-1.png" alt="">
-                                <div class="d-flex flex-column ps-2">
-                                    <div>Kim Ramos</div>
-                                    <div>Serbia</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <GamersSayCard v-for="userReview in userReviews" :reviewData="userReview" />
+
                 </div>
 
             </div>
@@ -332,13 +342,4 @@ h2 {
 
 
 /* gamers say section */
-
-path {
-    color: #f8bb04;
-}
-.opinion_card {
-    border-radius: 20px;
-    background-color: #28344a;
-}
-
 </style>
