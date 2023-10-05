@@ -69,6 +69,7 @@ path {
     width: 300px;
 }
 
+
 .img_container {
     width: 40px;
     height: 40px;
