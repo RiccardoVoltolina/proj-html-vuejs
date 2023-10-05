@@ -135,6 +135,12 @@ p {
 
 }
 
+.footer_icon:hover {
+    background-color: #92cb52;
+    cursor: pointer;
+    border: none;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -142,6 +148,10 @@ a {
     margin-top: 5px;
     margin-bottom: 5px;
     font-size: 12px;
+}
+
+a:hover {
+    color: #92cb52;
 }
 
 .color_gray_fluo {

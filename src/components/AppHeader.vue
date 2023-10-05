@@ -108,6 +108,10 @@ a {
     color: white;
 }
 
+a:hover {
+    color: #92cb52;
+}
+
 .purchased_items {
     background-color: #08cb7b;
     height: 20px;
