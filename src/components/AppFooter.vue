@@ -1,10 +1,17 @@
 <script>
 export default {
     name: 'AppFooter',
-    props: {
-        footerElements: Object,
-    }
-
+    data() {
+        return {
+            footerInfos: [
+                {//card1
+                    h3: 'Quick Links',
+                    a: ['Games', 'Latest Tournament', 'Shop', 'Blog', 'Contact']
+                },
+             
+            ]
+        }
+    },
 }
 </script>
 
@@ -33,7 +40,12 @@ export default {
                         </div>
                     </div>
                     <div class="col-2">
-                        
+                        <div class="d-flex">
+                            <div v-for="footerInfo in footerInfos" class="d-flex flex-column">
+                                <h3>{{ footerInfo.h3 }}</h3>
+                                <a v-for="a in footerInfo.a" href="">{{ a }}</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -46,6 +58,10 @@ export default {
 .bg_secondary {
     background-color: #28344a;
 
+}
+
+h3 {
+    color: white;
 }
 
 p {
