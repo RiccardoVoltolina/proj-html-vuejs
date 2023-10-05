@@ -346,17 +346,19 @@ export default {
 
         <!-- subscribe section -->
 
-        <section>
-            <div class="container w-75">
-                <div class="subscribe_card w-75 m-auto align-items-center p-4 d-flex">
+        <section class="bg_secondary">
+            <div class="container w-75 position-relative">
+                <div class="subscribe_card w-75 m-auto align-items-center p-4 d-flex position-absolute">
                     <div class="w-50 d-flex flex-column">
                         <h3>Subscribe Newsletter</h3>
-                        <p>Libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at telus</p>
+                        <p>Libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at telus
+                        </p>
                     </div>
                     <div class="w-50 ps-3">
-                        <div class="d-flex justify-content-between align-items-center send_email_container p-2">
-                            <div>Enter your email</div>
-                            <div class="send_button d-flex justify-content-center align-items-center">
+                        <div class="d-flex position-relative align-items-center send_email_container p-2">
+                            <input class="w-100 send_email_icon" type="text" placeholder="Enter your email" name="sendEmail"
+                                id="">
+                            <div class="send_button d-flex justify-content-center align-items-center position-absolute">
                                 <img class="p-2 send_image" src="../assets/images/icon/send-icon.png" alt="">
                             </div>
                         </div>
@@ -535,9 +537,16 @@ h2 {
 
 /* subscribe section*/
 
+.bg_secondary {
+    background-color: #28344a;
+    height: 130px;
+}
 .subscribe_card {
     background-color: #30415f;
     border-radius: 15px;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
 }
 
 .send_email_container {
@@ -545,11 +554,17 @@ h2 {
     border-radius: 15px;
 }
 
+.send_email_icon {
+    background-color: #435374;
+    border: none;
+}
+
 .send_button {
     background-color: #92cb52;
     border-radius: 50%;
+    right: 5px;
+
     .send_image {
-        width: 40px;
+        width: 35px;
     }
-}
-</style>
+}</style>
