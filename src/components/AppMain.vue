@@ -351,8 +351,8 @@ export default {
             <div class="container w-75 position-relative">
                 <div class="subscribe_card w-75 m-auto align-items-center p-4 d-flex position-absolute">
                     <div class="w-50 d-flex flex-column">
-                        <h3>Subscribe Newsletter</h3>
-                        <p>Libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at telus
+                        <h3 class="text-white">Subscribe Newsletter</h3>
+                        <p class="font_size_12 text-white">Libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at telus
                         </p>
                     </div>
                     <div class="w-50 ps-3">

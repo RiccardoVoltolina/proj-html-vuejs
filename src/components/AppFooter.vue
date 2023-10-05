@@ -22,7 +22,7 @@ export default {
                 {//card4
                     h3: 'Contect',
                     aLocation: ['4nMayfield, Buckden, PE19 5SZ'],
-                    aPhone: ['(302)5550107']
+                    aPhone: ['(302) 5550107']
                 },
             ],
         }
@@ -38,7 +38,7 @@ export default {
                     <div>
                         <img src="../assets/images/header-images/header logo.png" alt="">
                     </div>
-                    <p class="py-3">Lorem ipsum dolor sit amet,elit,varius enim in eros elementum Duis mi quis viverra
+                    <p class="py-3 font_size_12">Lorem ipsum dolor sit amet,elit,varius enim in eros elementum Duis mi quis viverra
                         ornare</p>
                     <div class="d-flex">
                         <div class="d-flex footer_icon">
@@ -58,7 +58,7 @@ export default {
                 <div class="col-2" v-for="footerInfo in footerInfos">
                     <div class="d-flex">
                         <div class="d-flex flex-column">
-                            <h3>{{ footerInfo.h3 }}</h3>
+                            <h3 class="">{{ footerInfo.h3 }}</h3>
                             <a v-for="a in footerInfo.a" href="">{{ a }}</a>
                         </div>
                     </div>
@@ -66,17 +66,17 @@ export default {
                 <div class="col-2" v-for="FooterInfoContact in FooterInfoContacts">
                     <div class="d-flex">
                         <div class="d-flex flex-column">
-                            <h3>{{ FooterInfoContact.h3 }}</h3>
-                            <div class="color_gray_fluo">Location:</div>
+                            <h3 class="">{{ FooterInfoContact.h3 }}</h3>
+                            <div class="color_gray_fluo font_size_12">Location:</div>
                             <a v-for="a in FooterInfoContact.aLocation" href="">{{ a }}</a>
-                            <div class="color_gray_fluo">Phone:</div>
+                            <div class="color_gray_fluo font_size_12">Phone:</div>
                             <a v-for="aPhone in FooterInfoContact.aPhone" href="">{{ aPhone }}</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="copyright_footer d-flex justify-content-center align-items-center">
+        <div class="copyright_footer d-flex justify-content-center align-items-center font_size_12">
             <div class="">Copyright @ 2022 <span class="color_gray_fluo">Futio</span>.All rights Reserve</div>
         </div>
     </footer>
@@ -89,6 +89,7 @@ footer {
 
 h3 {
     color: white;
+    font-size: 24px;
 }
 
 p {
@@ -122,6 +123,7 @@ a {
     width: fit-content;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 12px;
 }
 
 .color_gray_fluo {
