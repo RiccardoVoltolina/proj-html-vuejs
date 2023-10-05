@@ -366,6 +366,9 @@ export default {
                 </div>
             </div>
         </section>
+
+       
+
     </main>
 </template>
 
@@ -541,6 +544,7 @@ h2 {
     background-color: #28344a;
     height: 130px;
 }
+
 .subscribe_card {
     background-color: #30415f;
     border-radius: 15px;
@@ -567,4 +571,9 @@ h2 {
     .send_image {
         width: 35px;
     }
-}</style>
+
+}
+
+/* footer */
+
+</style>
