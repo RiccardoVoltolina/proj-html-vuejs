@@ -25,8 +25,7 @@ export default {
 
 <style lang="scss">
 @use './assets/app';
-
-
-
-
+.font_size_15 {
+  font-size: 15px;
+}
 </style>

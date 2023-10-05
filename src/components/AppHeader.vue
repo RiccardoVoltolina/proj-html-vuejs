@@ -56,10 +56,10 @@ export default {
                     <div class="col-3 d-flex align-items-center">
                         <div class="d-flex align-items-center">
                             <div class="position-relative">
-                                <div class=" position-absolute purchased_items d-flex align-items-center justify-content-center"><div>03</div></div>
+                                <div class=" position-absolute purchased_items d-flex align-items-center justify-content-center"><div class="font_size_10">03</div></div>
                                 <img class="me-3" src="../assets/images/icon/cart-icon.png" alt="">
                             </div>
-                            <AppButton :buttonText="'Live streaming'" />
+                            <AppButton :buttonText="'LIVE STREAMING'" />
                         </div>
                     </div>
                 </div>
@@ -69,12 +69,12 @@ export default {
             <div class="container w-75">
                 <div class="row d-flex align-content-center">
                     <div class="col-5 d-flex flex-column justify-content-center">
-                        <h5>Gaming with live streaming</h5>
+                        <h5 class="pb-2 color_gray_fluo">Game With Live Streaming</h5>
                         <h2>Future Of <br> Esports</h2>
-                        <p class="text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        <p class="text-white font_size_15">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium</p>
                         <div class="d-flex align-items-center">
-                            <AppButton :buttonText="'Explore games'"
+                            <AppButton :buttonText="'EXPLORE GAMES'"
                                 :img="'src/assets/images/svg/e-double-right-arrow.svg'"></AppButton>
 
                             <div class="ps-1">
@@ -117,6 +117,11 @@ a {
     border-radius: 50%;
     right: 13px;
     top: -10px;
+}
+
+.font_size_10 {
+    font-size: 15px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 

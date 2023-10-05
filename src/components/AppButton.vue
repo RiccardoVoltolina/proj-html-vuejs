@@ -34,5 +34,8 @@ button {
     border-radius: 30px;
     padding: 9px;
     background-color: #08cb7b;
+    img {
+        filter: invert(100%);
+    }
 }
 </style>
