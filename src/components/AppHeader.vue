@@ -2,6 +2,29 @@
 import AppButton from './AppButton.vue';
 export default {
     name: 'AppHeader',
+    data() {
+        return {
+            HeaderInfos: [
+                {//card2
+                    a: ['Games'],
+                    img: 'src/assets/images/svg/c-down-arrow.svg'
+                },
+                {//card3
+                    a: ['Shop'],
+                    img: 'src/assets/images/svg/c-down-arrow.svg'
+                },
+                {//card4
+                    a: ['Pages'],
+                    img: 'src/assets/images/svg/c-down-arrow.svg'
+                },
+                {//card5
+                    a: ['Blog'],
+                    img: 'src/assets/images/svg/c-down-arrow.svg'
+                },
+            ],
+        }
+    },
+
     components: {
         AppButton,
     }
@@ -16,34 +39,26 @@ export default {
                     <div class="col-3 d-flex align-items-center">
                         <img src="../assets/images/header-images/header logo.png" alt="">
                     </div>
-                    <div class="col-6 d-flex align-items-center justify-content-evenly">
-                        <div>
-                            <a href="">Home</a>
+                    <div class="col-6 d-flex align-items-center">
+                        <div class="d-flex align-items-center justify-content-evenly w-100">
+                            <a class="color_gray_fluo" href="">Home</a>
                         </div>
-                        <div>
-                            <a href="">Games</a>
-                            <img class="ps-1" src="../assets/images/svg/c-down-arrow.svg" alt="">
+                        <div v-for="HeaderInfo in HeaderInfos"
+                            class="d-flex align-items-center justify-content-evenly w-100">
+                            <a v-for="a in HeaderInfo.a" href="">{{ a }}</a>
+                            <img :src="HeaderInfo.img" alt="">
                         </div>
-                        <div>
-                            <a href="">Shop</a>
-                            <img class="ps-1" src="../assets/images/svg/c-down-arrow.svg" alt="">
-                        </div>
-                        <div>
-                            <a href="">Pages</a>
-                            <img class="ps-1" src="../assets/images/svg/c-down-arrow.svg" alt="">
-                        </div>
-                        <div>
-                            <a href="">Blog</a>
-                            <img class="ps-1" src="../assets/images/svg/c-down-arrow.svg" alt="">
-                        </div>
-                        <div>
+                        <div class="d-flex align-items-center justify-content-evenly w-100">
                             <a href="">Contact</a>
                         </div>
 
                     </div>
                     <div class="col-3 d-flex align-items-center">
                         <div class="d-flex align-items-center">
-                            <img class="pe-2" src="../assets/images/icon/cart-icon.png" alt="">
+                            <div class="position-relative">
+                                <div class=" position-absolute purchased_items d-flex align-items-center justify-content-center"><div>03</div></div>
+                                <img class="me-3" src="../assets/images/icon/cart-icon.png" alt="">
+                            </div>
                             <AppButton :buttonText="'Live streaming'" />
                         </div>
                     </div>
@@ -59,11 +74,13 @@ export default {
                         <p class="text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium doloremque laudantium</p>
                         <div class="d-flex align-items-center">
-                            <AppButton :buttonText="'Explore games'" :img="'src/assets/images/svg/e-double-right-arrow.svg'"></AppButton>
+                            <AppButton :buttonText="'Explore games'"
+                                :img="'src/assets/images/svg/e-double-right-arrow.svg'"></AppButton>
 
                             <div class="ps-1">
                                 <div class="border_play_button">
-                                    <button class="play_button"><img src="../assets/images/icon/play-icon.png" alt=""></button>
+                                    <button class="play_button"><img src="../assets/images/icon/play-icon.png"
+                                            alt=""></button>
                                 </div>
                             </div>
                         </div>
@@ -84,10 +101,24 @@ header {
     background-size: cover;
 }
 
+.color_gray_fluo {
+    color: #92cb52;
+}
+
 a {
     text-decoration: none;
     color: white;
 }
+
+.purchased_items {
+    background-color: #08cb7b;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    right: 13px;
+    top: -10px;
+}
+
 
 /* section future */
 
@@ -97,6 +128,7 @@ a {
     background-position: bottom 160px left 10px;
     background-size: 300px;
 }
+
 h2 {
     font-size: 55px;
     color: white;
@@ -108,11 +140,13 @@ h2 {
     height: 40px;
     border: none;
 }
+
 .border_play_button {
     border: 1px solid #08cb7b;
     border-radius: 50%;
     padding: 5px;
 }
+
 .height_750 {
     height: 750px;
 }
