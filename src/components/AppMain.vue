@@ -197,7 +197,7 @@ export default {
                         <p class="text-white px-4 pb-5 font_size_12">libero melesuada feugiat. Vivamus magna justo, lacinia eget
                             consectetur sed,
                             convallis at tellus. <br> Cras ultricies liguia sed magna dictum porta.</p>
-                        <div class="position-relative image_elements">
+                        <div class="position-relative image_elements game_video_img">
                             <img class="w-100" src="../assets/images/video-bg.png" alt="">
                             <div class="live_button_container position-absolute">
                                 <button class="d-flex align-items-center live_button"><img class="pe-2"
@@ -408,11 +408,16 @@ h2 {
 /* watch streams */
 
 .watch_streams {
-    background-color: #212733;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     background-image: url(../assets/images/live-streaming-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
+
+    
 
     .live_button_container {
 
@@ -575,15 +580,17 @@ h2 {
 .send_email_icon {
     background-color: #435374;
     border: none;
+    height: 40px;
 }
 
 .send_button {
     background-color: #92cb52;
     border-radius: 50%;
-    right: 5px;
+    right: 10px;
 
     .send_image {
         width: 35px;
+        cursor: pointer;
     }
 
 }
