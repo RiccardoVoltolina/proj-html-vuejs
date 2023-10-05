@@ -41,11 +41,21 @@ export default {
                     </div>
                     <div class="col-6 d-flex align-items-center">
                         <div class="d-flex align-items-center justify-content-evenly w-100">
-                            <a class="color_gray_fluo" href="">Home</a>
+                            <a class="color_gray_fluo position-relative" href="">Home
+                            </a>
+
                         </div>
                         <div v-for="HeaderInfo in HeaderInfos"
-                            class="d-flex align-items-center justify-content-evenly w-100">
-                            <a v-for="a in HeaderInfo.a" href="">{{ a }}</a>
+                            class="d-flex align-items-center justify-content-evenly w-100 position-relative">
+                            <a class="position-relative" v-for="a in HeaderInfo.a" href="">{{ a }}
+                                <div class="card position-absolute dropdown_card">
+                                    <div class="d-flex flex-column">
+                                        <div class="pt-3 ps-3">Games</div>
+                                        <div class="py-2 ps-3">Games Details</div>
+                                        <div class="ps-3 pb-3">Match Details</div>
+                                    </div>
+                                </div>
+                            </a>
                             <img :src="HeaderInfo.img" alt="">
                         </div>
                         <div class="d-flex align-items-center justify-content-evenly w-100">
@@ -56,7 +66,10 @@ export default {
                     <div class="col-3 d-flex align-items-center">
                         <div class="d-flex align-items-center">
                             <div class="position-relative">
-                                <div class=" position-absolute purchased_items d-flex align-items-center justify-content-center"><div class="font_size_10">03</div></div>
+                                <div
+                                    class=" position-absolute purchased_items d-flex align-items-center justify-content-center">
+                                    <div class="font_size_10">03</div>
+                                </div>
                                 <img class="me-3" src="../assets/images/icon/cart-icon.png" alt="">
                             </div>
                             <AppButton :buttonText="'LIVE STREAMING'" />
@@ -101,7 +114,18 @@ header {
     background-size: cover;
 }
 
+.dropdown_card {
+    background-color: #151924;
+    color: white;
+    display: none;
+    right: -100px;
+    width: 200px;
+    bottom: -122px;
+}
 
+a:hover .dropdown_card {
+    display: block;
+}
 
 a {
     text-decoration: none;
@@ -123,7 +147,7 @@ a:hover {
 
 .font_size_10 {
     font-size: 15px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
