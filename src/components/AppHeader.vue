@@ -50,9 +50,9 @@ export default {
                             <a class="position-relative" v-for="a in HeaderInfo.a" href="">{{ a }}
                                 <div class="card position-absolute dropdown_card">
                                     <div class="d-flex flex-column">
-                                        <div class="pt-3 ps-3">Games</div>
-                                        <div class="py-2 ps-3">Games Details</div>
-                                        <div class="ps-3 pb-3">Match Details</div>
+                                        <a class="pt-3 ps-3">Games</a>
+                                        <a class="py-2 ps-3">Games Details</a>
+                                        <a class="ps-3 pb-3">Match Details</a>
                                     </div>
                                 </div>
                             </a>
@@ -115,7 +115,7 @@ header {
 }
 
 .dropdown_card {
-    background-color: #151924;
+    background-color: #212733;
     color: white;
     display: none;
     right: -100px;

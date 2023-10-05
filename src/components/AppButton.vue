@@ -45,4 +45,8 @@ button {
     background-color: #92cb52;
 }
 
+button:hover {
+    border: 1px solid #92cb52;
+}
+
 </style>
