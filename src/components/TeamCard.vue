@@ -16,27 +16,27 @@ export default {
     <div class="card bg_color_card_team d-flex flex-column">
         <div class="d-flex p-3 battle_team align-items-center justify-content-evenly">
             <div class="col-4">
-                <img :src="imgTeam1" alt="">
+                <img class="teamImage" :src="imgTeam1" alt="">
             </div>
             <div class="col-4 text-center">
                 <img src="../assets/images/verus-icon.png" alt="">
             </div>
             <div class="col-4">
-                <img :src="imgTeam2" alt="">
+                <img class="teamImage" :src="imgTeam2" alt="">
             </div>
         </div>
-        <div class="text-center py-3 bg_banner_card">
-            <h5>{{ textTitle }}</h5>
-            <span>{{ dayMatch }}</span>
+        <div class="text-center py-5 bg_banner_card">
+            <h5 class="text-white">{{ textTitle }}</h5>
+            <span class="color_gray_fluo">{{ dayMatch }}</span>
         </div>
-        <div class="d-flex justify-content-center py-3">
+        <div class="d-flex justify-content-center py-4">
             <div class="d-flex align-items-center">
                 <img class="w-25" src="../assets/images/icon/youtube-icon.png" alt="">
-                <div class="text-white">Youtube</div>
+                <div class="text-white ps-1">Youtube</div>
             </div>
             <div class="d-flex align-items-center">
                 <img class="w-25" src="../assets/images/icon/twitch-icon.png" alt="">
-                <div class="text-white">Twitch</div>
+                <div class="text-white ps-1">Twitch</div>
             </div>
         </div>
 

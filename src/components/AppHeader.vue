@@ -101,9 +101,7 @@ header {
     background-size: cover;
 }
 
-.color_gray_fluo {
-    color: #92cb52;
-}
+
 
 a {
     text-decoration: none;

@@ -36,6 +36,8 @@ button {
     background-color: #08cb7b;
     img {
         filter: invert(100%);
+        padding-left: 5px;
+        padding-bottom: 5px;
     }
 }
 </style>

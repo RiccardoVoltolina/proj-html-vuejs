@@ -13,37 +13,37 @@ export default {
                     userImg: 'src/assets/images/user-image-1.png',
                     userName: 'Kim Ramos',
                     userCountry: 'Serbia',
-                    userText: 'Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor',
+                    userText: '"Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor"',
                     userStar: 4,
                 },
                 {//card2
                     userImg: 'src/assets/images/user-image-2.png',
-                    userName: 'Kim Ramos',
-                    userCountry: 'Serbia',
-                    userText: 'Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor',
+                    userName: 'GarryFrancis',
+                    userCountry: 'Francia',
+                    userText: '"Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor"',
                     userStar: 3,
                 },
                 {//card3
                     userImg: 'src/assets/images/user-image-3.png',
-                    userName: 'Kim Ramos',
-                    userCountry: 'Serbia',
-                    userText: 'Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor',
+                    userName: 'Riky Volto',
+                    userCountry: 'Italia',
+                    userText: '"Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor"',
                     userStar: 5,
                 },
 
                 {//card4
 
                     userImg: 'src/assets/images/user-image-4.png',
-                    userName: 'Kim Ramos',
-                    userCountry: 'Serbia',
-                    userText: 'Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor',
+                    userName: 'How To Do',
+                    userCountry: 'Italia',
+                    userText: '"Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor"',
                     userStar: 1,
                 },
                 {//card5
                     userImg: 'src/assets/images/user-image-1.png',
                     userName: 'Kim Ramos',
-                    userCountry: 'Serbia',
-                    userText: 'Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor',
+                    userCountry: 'Spagna',
+                    userText: '"Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt ut labor"',
                     userStar: 2,
                 },
             ]
@@ -68,13 +68,14 @@ export default {
                         <img class="with_600" src="../assets/images/features-illus.png" alt="">
                     </div>
                     <div class="col text-white d-flex flex-column">
-                        <h5>The ultimate competitive gaming platform</h5>
+                        <h5 class="color_gray_fluo">The ultimate competitive gaming platform</h5>
                         <h2>Make your mark on the battle field</h2>
-                        <p class="w-75">Libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed,
+                        <p class="w-75 font_size_12">Libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur
+                            sed,
                             convallis at
                             tellus. Cras ultricies liguia sed magna dictum porta.</p>
                         <div class="d-flex align-items-center">
-                            <img src="../assets/images/icon/features-icon-1.png" alt="">
+                            <img class="w_70px" src="../assets/images/icon/features-icon-1.png" alt="">
                             <div class="ps-3">
                                 <h4 class="text-white">Live streaming</h4>
                                 <p>Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt
@@ -82,7 +83,7 @@ export default {
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
-                            <img src="../assets/images/icon/features-icon-2.png" alt="">
+                            <img class="w_70px" src="../assets/images/icon/features-icon-2.png" alt="">
                             <div class="ps-3">
                                 <h4 class="text-white">Great Tournament</h4>
                                 <p>Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt
@@ -90,7 +91,7 @@ export default {
                             </div>
                         </div>
                         <div class="d-flex align-items-center">
-                            <img src="../assets/images/icon/features-icon-3.png" alt="">
+                            <img class="w_70px" src="../assets/images/icon/features-icon-3.png" alt="">
                             <div class="ps-3">
                                 <h4 class="text-white">Gaming News</h4>
                                 <p>Lorem ipsum dolor sit amet. consectetur adipiscing elit, sed do eismod tempor incididunt
@@ -98,7 +99,7 @@ export default {
                             </div>
                         </div>
                         <div class="pt-4">
-                            <AppButton :buttonText="'Play Now'" :img="'src/assets/images/svg/e-double-right-arrow.svg'">
+                            <AppButton :buttonText="'PLAN NOW'" :img="'src/assets/images/svg/e-double-right-arrow.svg'">
                             </AppButton>
                         </div>
                     </div>
@@ -111,9 +112,9 @@ export default {
         <section class="bg_color_treding_battle">
             <div class="container w-50">
                 <div class=" text-center py-5">
-                    <h5>Trending battle</h5>
-                    <h2>Keep eyes & Manage <br> Upcoming battle</h2>
-                    <p>Libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+                    <h5 class="color_gray_fluo">Trending Battle</h5>
+                    <h2>Keep Eyes & Manage <br> Upcoming Battle</h2>
+                    <p class="text-white">Libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
                         Cras ultricies liguia sed magna dictum porta.</p>
                 </div>
             </div>
@@ -140,7 +141,7 @@ export default {
                             :imgTeam2="'src/assets/images/battle-team-8.png'" />
                     </div>
                     <div class="text-center pe-4 py-5">
-                        <AppButton :buttonText="'View All Match'" :img="'src/assets/images/svg/e-double-right-arrow.svg'">
+                        <AppButton :buttonText="'VIEW ALL MATCH'" :img="'src/assets/images/svg/e-double-right-arrow.svg'">
                         </AppButton>
                     </div>
 
@@ -152,30 +153,30 @@ export default {
 
         <section class="bg-black facts">
             <div class="container w-75 m-auto">
-                <h2 class="text-center pb-5">Futio quick facts</h2>
+                <h2 class="text-center pb-5">Futio Quick Facts</h2>
                 <div class="row">
                     <div class="col-3">
                         <div class="card bg-black text-center">
                             <h2>1135</h2>
-                            <div>Twitch streams</div>
+                            <div class="color_gray_fluo">Twitch Streams</div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="card bg-black text-center">
                             <h2>44</h2>
-                            <div>Total Games</div>
+                            <div class="color_gray_fluo">Total Games</div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="card bg-black text-center">
                             <h2>982</h2>
-                            <div>Youtube streams</div>
+                            <div class="color_gray_fluo">Youtube streams</div>
                         </div>
                     </div>
                     <div class="col-3">
                         <div class="card bg-black text-center">
                             <h2>40</h2>
-                            <div>Pro Team</div>
+                            <div class="color_gray_fluo">Pro Team</div>
                         </div>
                     </div>
                 </div>
@@ -191,9 +192,9 @@ export default {
                 <div class="watch_streams">
 
                     <div class="container w-50 text-center pb-5">
-                        <h5 class="text-white pt-5">Live Streaming</h5>
+                        <h5 class="pt-5 color_gray_fluo">Live Streaming</h5>
                         <h2>Watch the streams</h2>
-                        <p class="text-white px-5 pb-5">libero melesuada feugiat. Vivamus magna justo, lacinia eget
+                        <p class="text-white px-4 pb-5 font_size_12">libero melesuada feugiat. Vivamus magna justo, lacinia eget
                             consectetur sed,
                             convallis at tellus. <br> Cras ultricies liguia sed magna dictum porta.</p>
                         <div class="position-relative image_elements">
@@ -212,10 +213,10 @@ export default {
                             <h4 class="position-absolute">League of legends</h4>
                             <div class="social_statics position-absolute">
                                 <div class="d-flex">
-                                    <div class="pe-1">356,599</div>
-                                    <div class="pe-3">Viewers</div>
-                                    <div class="pe-1">23,599</div>
-                                    <div>Likes</div>
+                                    <div class="pe-1 color_gray_fluo font_size_12">356,599</div>
+                                    <div class="pe-3 text-white font_size_12">Viewers</div>
+                                    <div class="pe-1 color_gray_fluo font_size_12">23,599</div>
+                                    <div class=" text-white font_size_12">Likes</div>
                                 </div>
                             </div>
                         </div>
@@ -229,9 +230,9 @@ export default {
 
         <section class="bg-black py-5">
             <div class="container w-50 text-center">
-                <h5>Futio feedback</h5>
-                <h2>What Our gamers Say</h2>
-                <p class="text-white px-5 pb-5">libero melesuada feugiat. Vivamus magna justo, lacinia eget
+                <h5 class="color_gray_fluo">Futio Feedback</h5>
+                <h2 class="px-1">What Our Gamers Say</h2>
+                <p class="text-white pb-5 py-1 font_size_12">libero melesuada feugiat. Vivamus magna justo, lacinia eget
                     consectetur sed,
                     convallis at tellus. <br> Cras ultricies liguia sed magna dictum porta.
                 </p>
@@ -251,7 +252,7 @@ export default {
                     <img class="ads_image_telephone position-absolute" src="../assets/images/banner-item-obj1.png" alt="">
                     <div class="text-white position-absolute ads_text d-flex flex-column align-items-center">
                         <h5>Make Offer</h5>
-                        <h2 class="pb-2">Get 70% Offer Discount</h2>
+                        <h2 class="pb-2 font_size_48">Get 70% Offer Discount</h2>
                         <button class="ads_button">Get Offers</button>
                     </div>
                     <img class="ads_image_headphones position-absolute" src="../assets/images/banner-item-obj2.png" alt="">
@@ -263,9 +264,9 @@ export default {
 
         <section class="bg-black">
             <div class="container w-50 text-center">
-                <h5>Latest News</h5>
+                <h5 class="color_gray_fluo">Latest News</h5>
                 <h2>Stay Updated With Our Latest News Articles</h2>
-                <p class="text-white px-5 pb-5">libero melesuada feugiat. Vivamus magna justo, lacinia eget
+                <p class="text-white font_size_12 pt-1 pb-5">libero melesuada feugiat. Vivamus magna justo, lacinia eget
                     consectetur sed,
                     convallis at tellus. <br> Cras ultricies liguia sed magna dictum porta.
                 </p>
@@ -276,66 +277,66 @@ export default {
                     <div class="col-6">
                         <div class="card border-0 latest_principal_card">
                             <img src="../assets/images/blog-item-1.png" class="card-img-top" alt="...">
-                            <div class="card-body pb-1">
+                            <div class="card-body pb-4">
                                 <div class="d-flex align-items-center pb-1">
                                     <img src="../assets/images/icon/clock.png" alt="">
-                                    <div class="ps-2 pe-3">10 min</div>
+                                    <div class="ps-2 pe-3 color_gray_fluo">10 min</div>
                                     <img src="../assets/images/icon/eye.png" alt="">
-                                    <div class="ps-2 pe-3">240</div>
+                                    <div class="ps-2 pe-3 color_gray_fluo">240</div>
                                     <img src="../assets/images/icon/calendar.png" alt="">
-                                    <div class="ps-2">Apr 11,2022</div>
+                                    <div class="ps-2 color_gray_fluo">Apr 11,2022</div>
                                 </div>
-                                <h3 class=" mb-0">Secrets To An Amazing Role</h3>
-                                <h3 class="mb-0">Playng Game</h3>
+                                <h3 class=" mb-0 text-white">Secrets To An Amazing Role</h3>
+                                <h3 class="mb-0 pb-1 text-white">Playng Game</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-6 d-flex flex-column">
-                        <div class="d-flex latest_secondary_card pb-1">
+                        <div class="d-flex latest_secondary_card w-550px">
                             <img class="h-100 border_radius_latest_img pe-3" src="../assets/images/blog-item-2.png" alt="">
                             <div class="d-flex flex-column py-3">
                                 <div class="d-flex align-items-center pb-3">
                                     <img src="../assets/images/icon/clock.png" alt="">
-                                    <div class="ps-2 pe-3">10 min</div>
+                                    <div class="ps-2 pe-3 color_gray_fluo">10 min</div>
                                     <img src="../assets/images/icon/eye.png" alt="">
-                                    <div class="ps-2 pe-3">240</div>
+                                    <div class="ps-2 pe-3 color_gray_fluo">240</div>
                                     <img src="../assets/images/icon/calendar.png" alt="">
-                                    <div class="ps-2">Apr 11,2022</div>
+                                    <div class="ps-2 color_gray_fluo">Apr 11,2022</div>
                                 </div>
-                                <h4 class=" mb-0">Top 5 Most Important</h4>
-                                <h4 class="mb-0">Aspects Of Your Game</h4>
+                                <h4 class=" mb-0 text-white">Top 5 Most Important</h4>
+                                <h4 class="mb-0 font_size_22 text-white py-2">Aspects Of Your Game</h4>
                             </div>
 
                         </div>
-                        <div class="d-flex latest_secondary_card  my-4">
+                        <div class="d-flex latest_secondary_card w-550px  my-4">
                             <img class="h-100 border_radius_latest_img pe-3" src="../assets/images/blog-item-3.png" alt="">
                             <div class="d-flex flex-column py-3">
                                 <div class="d-flex align-items-center pb-3">
                                     <img src="../assets/images/icon/clock.png" alt="">
-                                    <div class="ps-2 pe-3">10 min</div>
+                                    <div class="ps-2 pe-3 color_gray_fluo">10 min</div>
                                     <img src="../assets/images/icon/eye.png" alt="">
-                                    <div class="ps-2 pe-3">240</div>
+                                    <div class="ps-2 pe-3 color_gray_fluo">240</div>
                                     <img src="../assets/images/icon/calendar.png" alt="">
-                                    <div class="ps-2">Apr 11,2022</div>
+                                    <div class="ps-2 color_gray_fluo">Apr 11,2022</div>
                                 </div>
-                                <h4 class=" mb-0">The Rise Of Fantasy</h4>
-                                <h4 class="mb-0">Sports And Online Games</h4>
+                                <h4 class=" mb-0 text-white">The Rise Of Fantasy</h4>
+                                <h4 class="mb-0 font_size_22 text-white py-2">Sports And Online Games</h4>
                             </div>
 
                         </div>
-                        <div class="d-flex latest_secondary_card pb-1">
+                        <div class="d-flex latest_secondary_card w-550px">
                             <img class="h-100 border_radius_latest_img pe-3" src="../assets/images/blog-item-4.png" alt="">
                             <div class="d-flex flex-column py-3">
                                 <div class="d-flex align-items-center pb-3">
                                     <img src="../assets/images/icon/clock.png" alt="">
-                                    <div class="ps-2 pe-3">10 min</div>
+                                    <div class="ps-2 pe-3 color_gray_fluo">10 min</div>
                                     <img src="../assets/images/icon/eye.png" alt="">
-                                    <div class="ps-2 pe-3">240</div>
+                                    <div class="ps-2 pe-3 color_gray_fluo">240</div>
                                     <img src="../assets/images/icon/calendar.png" alt="">
-                                    <div class="ps-2">Apr 11,2022</div>
+                                    <div class="ps-2 color_gray_fluo">Apr 11,2022</div>
                                 </div>
-                                <h4 class=" mb-0">Benefits Of Gaming - PC</h4>
-                                <h4 class="mb-0">And Video Games</h4>
+                                <h4 class=" mb-0 text-white">Benefits Of Gaming - PC</h4>
+                                <h4 class="mb-0 font_size_22 text-white py-2">And Video Games</h4>
                             </div>
 
                         </div>
@@ -367,7 +368,7 @@ export default {
             </div>
         </section>
 
-       
+
 
     </main>
 </template>
@@ -381,6 +382,7 @@ h2 {
     font-size: 55px;
     color: white;
 }
+
 
 /* treding battle */
 .bg_color_treding_battle {
@@ -406,8 +408,8 @@ h2 {
 /* watch streams */
 
 .watch_streams {
-    /*     background-color: #212733;
- */
+    background-color: #212733;
+
     background-image: url(../assets/images/live-streaming-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -496,6 +498,10 @@ h2 {
             bottom: -100px;
         }
 
+        .font_size_48 {
+            font-size: 48px;
+        }
+
         .ads_text {
             top: 50%;
             right: 50%;
@@ -529,13 +535,21 @@ h2 {
 }
 
 .latest_secondary_card {
-    height: calc(100% / 3 - 4rem);
+    height: calc(100% / 3 - 62px);
     border-radius: 15px;
     background-color: #28344a;
 
     .border_radius_latest_img {
         border-radius: 15px;
     }
+
+    .font_size_22 {
+        font-size: 22px;
+    }
+
+}
+.w-550px {
+    width: 550px;
 }
 
 /* subscribe section*/
@@ -573,6 +587,4 @@ h2 {
     }
 
 }
-
-
 </style>

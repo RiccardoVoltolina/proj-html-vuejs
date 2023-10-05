@@ -50,7 +50,7 @@ export default {
                 <img class=" object-fit-contain" :src="reviewData.userImg" alt="">
             </div>
             <div class="d-flex flex-column ps-2">
-                <div class="text-white">{{ reviewData.userName }}</div>
+                <h5 class="text-white">{{ reviewData.userName }}</h5>
                 <div class="user_country_color">{{ reviewData.userCountry }}</div>
             </div>
         </div>
