@@ -417,7 +417,11 @@ h2 {
     background-repeat: no-repeat;
     background-size: contain;
 
-    
+    .game_video_img:hover {
+        width: 800px;
+        left: -50px;
+        cursor: pointer;
+    }
 
     .live_button_container {
 
